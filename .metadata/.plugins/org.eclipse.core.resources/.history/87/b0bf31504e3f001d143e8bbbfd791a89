@@ -1,0 +1,18 @@
+package com.robert.devdemo.models;
+
+public class BackEndDeveloper extends Developer{
+	
+	boolean cssHate;
+
+	public BackEndDeveloper() {
+		super("back end dev default name");
+		this.cssHate = true;
+		
+	}
+	
+	public BackEndDeveloper(String name) {
+		super();
+		this.name = name;
+	}
+
+}

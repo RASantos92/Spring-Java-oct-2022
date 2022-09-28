@@ -1,0 +1,10 @@
+package com.robert.devdemo.models;
+
+public class BackEndDeveloper extends Developer{
+
+
+	public BackEndDeveloper() {
+
+	}
+
+}

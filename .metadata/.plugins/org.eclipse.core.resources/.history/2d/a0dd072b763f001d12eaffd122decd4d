@@ -1,0 +1,19 @@
+package com.robert.interfacedemo;
+
+import com.robert.interfacedemo.models.Cat;
+import com.robert.interfacedemo.models.Dog;
+
+public class InterfaceDemoApplication {
+
+	public static void main(String[] args) {
+		
+		Dog d = new Dog("Firulais");
+		Cat c = new Cat("Potato Barry");
+		d.showAffection();
+		d.askForFood();
+		System.out.println("***************************");
+		c.showAffection();
+		c.askForFood();
+	}
+
+}

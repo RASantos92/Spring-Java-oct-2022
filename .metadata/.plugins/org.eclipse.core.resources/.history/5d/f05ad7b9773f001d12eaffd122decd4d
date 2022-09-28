@@ -1,0 +1,9 @@
+package com.robert.abstractdemo.models;
+
+public class Cash {
+
+	public Cash() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

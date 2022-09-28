@@ -1,0 +1,16 @@
+package com.robert.devdemo.models;
+
+public class BackEndDeveloper extends Developer{
+
+
+	public BackEndDeveloper() {
+		super("back end dev default name");
+		
+	}
+	
+	public BackEndDeveloper(String name) {
+		super();
+		this.name = name;
+	}
+
+}

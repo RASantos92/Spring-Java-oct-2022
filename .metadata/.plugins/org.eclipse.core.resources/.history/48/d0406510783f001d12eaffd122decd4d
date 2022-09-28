@@ -1,0 +1,13 @@
+package com.robert.abstractdemo;
+
+import com.robert.abstractdemo.models.Cash;
+
+public class AbstractDemoApplication {
+
+	public static void main(String[] args) {
+//		Payment pay = new Payment();
+		Cash puppy = new Cash(599.99);
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.robert.interfacedemo.models;
+
+public class Pet {
+	// attributes
+	private String name;
+	private String type;
+
+	public Pet() {}
+	
+	public Pet(String name) {
+		this.name = name;
+	}
+
+}
