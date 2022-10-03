@@ -4,11 +4,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<!-- for Bootstrap CSS -->
+<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
+<!-- For any Bootstrap that uses JS or jQuery-->
+
+
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>JSTL Demo</h1>
+	<h1 class="text-primary btn btn-warning btn-outline-danger">JSTL Demo</h1>
 	<h2><c:out value="${jspName}"/></h2>
 	<p>${jspAge}</p>
 	<p>${jspIsHungry}</p>
@@ -41,5 +47,7 @@
     	<p><c:out value="${user}"/></p>
     </c:forEach>
     
+<script src="/webjars/jquery/jquery.min.js"></script>
+<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
