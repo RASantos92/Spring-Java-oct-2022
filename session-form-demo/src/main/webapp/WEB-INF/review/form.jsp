@@ -22,7 +22,7 @@
         </div>
         <div>
             <label> Rating </label>
-            <input type="number" name="rating"/>
+            <input type="number" min="5" max="25" name="rating"/>
         </div>
             <button type="submit">review movie</button>
     </form>

@@ -60,6 +60,10 @@ public class HomeController {
 	}
 	
 	
+	
+	
+	
+	
 	@GetMapping("/review/form")
 	public String reviewForm() {
 		return "review/form.jsp";
@@ -68,7 +72,12 @@ public class HomeController {
 	
 	// @RequestMapping(value="/review/form", method=RequestMethod.POST)
 	@PostMapping("/review/form")
-	public String processForm(@RequestParam("movie") String movie, @RequestParam("comment") String comment, @RequestParam("rating") Integer rating, HttpSession session, RedirectAttributes redirectAttributes, @RequestParam("reviewer") String reviewer) {
+	public String processForm(@RequestParam("movie") String movie,
+			@RequestParam("comment") String comment, 
+			@RequestParam("rating") Integer rating, 
+			HttpSession session, 
+			RedirectAttributes redirectAttributes, 
+			@RequestParam("reviewer") String reviewer) {
 		if(rating < 0) {
 			redirectAttributes.addFlashAttribute("error", "<p style='color:red'> Rating must be more than zero </p>");
 			return "redirect:/review/form";
